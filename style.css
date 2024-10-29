@@ -1,3 +1,16 @@
+@keyframes movimientocopado{
+    0%{
+        transform:scale(0)
+    }
+    50%{
+        from{transform:scale(0.5)}
+        to {transform:translateX(100)}
+    }
+    100%{
+        from{transform:scale(1)}
+        to{transform: translateX(0)}
+    }
+}
 @keyframes aparecerjoya {
     from {
       opacity: 0;
@@ -18,19 +31,24 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 body{
-    background-color: rgb(75, 75, 75);
+    background-color: dimgrey;
 }
 .parrafo{
     color:azure
 }
-.titulo {
+.titulo{
     margin-top: 2%;
     margin-bottom: 2%;
-    animation-name: movimientocopado;
-    animation-duration: 3s;
-    display: flex;
-    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/fondo\ seguridad\ informatica.png');
+    background-size: 25% auto;
+    border-top: 100px#252424;
+    border-bottom: 100px#252424;
+    height: 25vh;
     color:azure;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .logo{
     display: flex;
@@ -85,19 +103,17 @@ body{
     color: black;
 }
 .tarjetitaorden {
-    margin-top: 2%;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .tarjetita {
     background-color: #363636;
-    
     width: 400px;
     height: 490px;
-    margin: 5px;
-    padding: 20px;
-    border-radius: 5%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
     display: inline-block;
     transition: 0.2s;
 }
@@ -107,7 +123,7 @@ body{
     transition: 0.2s;
 }
 .tarjetita img {
-    margin-top: 2%;
+    margin-top: 5%;
     width: 200px;
     height: 200px;
     display: block;
@@ -134,8 +150,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    color:azure;
-    padding: 3%;
+    color:azure
 }
 .tarjetitaorden .quienesomos{
     text-align: center;
