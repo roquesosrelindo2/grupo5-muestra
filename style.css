@@ -124,8 +124,6 @@ body{
 }
 .tarjetita img {
     margin-top: 5%;
-    width: 200px;
-    height: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -158,4 +156,38 @@ body{
     margin-top: 25px;
     animation-name: movimientocopado;
     animation-duration: 3s;
+}
+.tarjetitaa {
+    background-color: #363636;
+    width: 400px;
+    height: 490px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    display: inline-block;
+    transition: 0.2s;
+}
+.tarjetitaa img {
+    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tarjetitaa p {
+    cursor:auto;
+}
+.tarjetitaa a{
+    text-decoration: none;
+}
+.tarjetitaa h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color:azure;
+}
+.tarjetitaa p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:azure
 }
